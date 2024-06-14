@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!------- style sheet link ------->
-		<link rel=“stylesheet” type=“text/css” href=“styles.css”>
+		<link rel="stylesheet" href="style.css" />
 
 		<!------- BoxIcons sheet link ------->
 		<link
@@ -61,9 +61,10 @@
 				<ul id="nav-items" class="nav-items">
 					<li><a href="#home" class="nav-links">HOME</a></li>
 					<li><a href="#menu" class="nav-links">MENU</a></li>
-					<li><a href="#events" class="nav-links">EVENTS</a></li>
 					<li><a href="#gallery" class="nav-links">GALLERY</a></li>
 					<li><a href="#chefs-choice" class="nav-links">CHEFS CHOICE</a></li>
+					<li><a href="#events" class="nav-links">EVENTS</a></li>
+
 					<li><a href="#footer" class="nav-links">CONTACT</a></li>
 				</ul>
 
@@ -104,7 +105,7 @@
 				<div class="slide slide1">
 					<div class="content">
 						<p class="sub-heading">TASTE. ELITE CAFE</p>
-						<h1 class="heading"> Best Quality</h1>
+						<h1 class="heading">Best Quality</h1>
 						<p class="sub-heading-2">FOOD</p>
 					</div>
 				</div>
@@ -176,6 +177,12 @@
 							</div>
 							<div class="desc">
 								<p>Seasoned and handmade to order</p>
+							</div>
+							<!---- Plus minus counter ---->
+							<div class="counter-wrapper">
+								<span class="minus">-</span>
+								<span class="num">01</span>
+								<span class="plus">+</span>
 							</div>
 						</div>
 					</div>
@@ -678,6 +685,7 @@
 				</div>
 				<!-- Menu Item End -->
 			</div>
+
 			<!------------ NB ADD CODE TO OPEN THE FULL MENU ------------>
 			<div class="btn-wrapper">
 				<a href="#" class="btn-2">View Full Menu</a>
@@ -685,6 +693,150 @@
 		</section>
 
 		<!------- Menu Section End ------>
+
+		<!------- Gallery Section End ------>
+
+		<section id="gallery">
+			<div class="section-heading">
+				<h3>Our Gallery</h3>
+				<h1>Our Untold Stories</h1>
+				<div class="square-wrapper flex-row">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
+			</div>
+			<div class="gallery-wrapper flex-row">
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/chicken burger.jpg">
+					<img src="images/Gallery/chicken burger.jpg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/cheesecake.jpeg">
+					<img src="images/Gallery/cheesecake.jpeg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/coffere.jpg">
+					<img src="images/Gallery/coffere.jpg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/game.png">
+					<img src="images/Gallery/game.png" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/hamburger.jpg">
+					<img src="images/Gallery/hamburger.jpg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/restaurant.jpeg">
+					<img src="images/Gallery/restaurant.jpeg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+				<!-- Gallery Image End -->
+				<!-- Gallery Image Start -->
+				<a class="gallery-img" href="images/Gallery/wrap.jpg">
+					<img src="images/Gallery/wrap.jpg" alt="#" />
+					<div class="overlay">
+						<i class="icon bx bx-search"></i>
+					</div>
+				</a>
+			</div>
+			<!-- Gallery Image End -->
+		</section>
+
+		<!------- Gallery Section End ------>
+
+		<!------- Chefs Choice Section Start ------>
+
+		<section id="chefs-choice">
+			<div class="section-heading">
+				<h3>Our Recipe</h3>
+				<h1>Chef Recommends</h1>
+				<div class="square-wrapper flex-row">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
+			</div>
+
+			<div class="chefs-carousel owl-carousel owl-theme">
+				<!--- Chefs Choice Starts --->
+				<a href="#" class="chefs-post">
+					<div class="img-wrapper">
+						<img src="images/Mains/kebabs.jpg" alt="#" />
+					</div>
+
+					<div class="text-wrapper">
+						<h5 class="chefs-title">Honey Glazed Chicken Kababs</h5>
+						<p class="desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</p>
+						<p class="time">
+							<i class="icon bx bx-time-five"></i>Time to prepare:
+							<span>15min</span>
+						</p>
+					</div>
+				</a>
+				<!--- Chefs Choice Ends --->
+				<!--- Chefs Choice Starts --->
+				<a href="#" class="chefs-post">
+					<div class="img-wrapper">
+						<img src="images/Mains/chicken curry.jpg" alt="#" />
+					</div>
+
+					<div class="text-wrapper">
+						<h5 class="chefs-title">Chicken Curry</h5>
+						<p class="desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</p>
+						<p class="time">
+							<i class="icon bx bx-time-five"></i>Time to prepare:
+							<span>20min</span>
+						</p>
+					</div>
+				</a>
+				<!--- Chefs Choice Ends ---><!--- Chefs Choice Starts --->
+				<a href="#" class="chefs-post">
+					<div class="img-wrapper">
+						<img src="images/Mains/hamburger.jpg" alt="#" />
+					</div>
+
+					<div class="text-wrapper">
+						<h5 class="chefs-title">Beef Buster</h5>
+						<p class="desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</p>
+						<p class="time">
+							<i class="icon bx bx-time-five"></i>Time to prepare:
+							<span>15min</span>
+						</p>
+					</div>
+				</a>
+				<!--- Chefs Choice Ends --->
+			</div>
+		</section>
 
 		<!------- Event Section Start ------>
 
@@ -791,155 +943,86 @@
 
 		<!------- Event Section End ------>
 
-		<!------- Gallery Section End ------>
-
-		<section id="gallery">
-			<div class="section-heading">
-				<h3>Our Gallery</h3>
-				<h1>Our Untold Stories</h1>
-				<div class="square-wrapper flex-row">
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-				</div>
-			</div>
-
-			<div class="gallery-wrapper flex-row">
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/chicken burger.jpg">
-					<img src="/images/Gallery/chicken burger.jpg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/cheesecake.jpeg">
-					<img src="/images/Gallery/cheesecake.jpeg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/coffere.jpg">
-					<img src="/images/Gallery/coffere.jpg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/game.png">
-					<img src="/images/Gallery/game.png" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/hamburger.jpg">
-					<img src="/images/Gallery/hamburger.jpg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/restaurant.jpeg">
-					<img src="/images/Gallery/restaurant.jpeg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-				<!-- Gallery Image End -->
-				<!-- Gallery Image Start -->
-				<a class="gallery-img" href="images/Gallery/wrap.jpg">
-					<img src="/images/Gallery/wrap.jpg" alt="#" />
-					<div class="overlay">
-						<i class="icon bx bx-search"></i>
-					</div>
-				</a>
-			</div>
-			<!-- Gallery Image End -->
-		</section>
-
-		<!------- Gallery Section End ------>
-
-		<!------- Chefs Choice Section Start ------>
-
-		<section id="chefs-choice">
-			<div class="section-heading">
-				<h3>Our Recipe</h3>
-				<h1>Chef Recommends</h1>
-				<div class="square-wrapper flex-row">
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-				</div>
-			</div>
-
-			<div class="chefs-carousel owl-carousel owl-theme">
-				<!--- Chefs Choice Starts --->
-				<a href="#" class="chefs-post">
-					<div class="img-wrapper">
-						<img src="images/Mains/kebabs.jpg" alt="#" />
-						<div class="overlay"><i class="icon bx bx-link"></i></div>
-					</div>
-
-					<div class="text-wrapper">
-						<h5 class="chefs-title">Honey Glazed Chicken Kababs</h5>
-						<p class="desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						</p>
-						<p class="time">
-							<i class="icon bx bx-time-five"></i>Time to prepare:
-							<span>15min</span>
-						</p>
-					</div>
-				</a>
-				<!--- Chefs Choice Ends --->
-				<!--- Chefs Choice Starts --->
-				<a href="#" class="chefs-post">
-					<div class="img-wrapper">
-						<img src="images/Mains/chicken curry.jpg" alt="#" />
-						<div class="overlay"><i class="icon bx bx-link"></i></div>
-					</div>
-
-					<div class="text-wrapper">
-						<h5 class="chefs-title">Chicken Curry</h5>
-						<p class="desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						</p>
-						<p class="time">
-							<i class="icon bx bx-time-five"></i>Time to prepare:
-							<span>20min</span>
-						</p>
-					</div>
-				</a>
-				<!--- Chefs Choice Ends ---><!--- Chefs Choice Starts --->
-				<a href="#" class="chefs-post">
-					<div class="img-wrapper">
-						<img src="images/Mains/hamburger.jpg" alt="#" />
-						<div class="overlay"><i class="icon bx bx-link"></i></div>
-					</div>
-
-					<div class="text-wrapper">
-						<h5 class="chefs-title">Beef Buster</h5>
-						<p class="desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						</p>
-						<p class="time">
-							<i class="icon bx bx-time-five"></i>Time to prepare:
-							<span>15min</span>
-						</p>
-					</div>
-				</a>
-				<!--- Chefs Choice Ends --->
-			</div>
-		</section>
-
 		<!------- Chefs Choice Section End ------>
+
+		<!------- Footer Quote Start ------>
+
+		<section class="footer-quote flex-col">
+			<h1>Elite Coffee Elite Food</h1>
+		</section>
+
+		<!------- Footer Quote End ------>
+
+		<!------- Footer Start ------>
+
+		<footer id="footer">
+			<div class="footer-top flex-row">
+				<div class="flex-col">
+					<h4 class="logo-name">Taste. Elite Cafe</h4>
+					<p class="desc">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						Dignissimos, similique?
+					</p>
+				</div>
+				<div class="flex-col">
+					<h4 class="heading">ADRESS</h4>
+					<p class="desc">
+						Somewhere street <br />
+						Dalian
+					</p>
+					<p class="desc">
+						Phone: 123456789 <br />
+						Wechat: EliteCafe
+					</p>
+				</div>
+				<div class="flex-col">
+					<h4 class="heading">OPEN HOURS</h4>
+					<ul class="timings flex-col">
+						<li>
+							<p class="days">Monday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Tuesday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Wednesday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Thursday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Friday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Saturday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+						<li>
+							<p class="days">Sunday</p>
+							<div class="time">10:00 - 22:00</div>
+						</li>
+					</ul>
+				</div>
+				<div class="flex-col">
+					<h4 class="heading">MORE INFO</h4>
+					<a href="#menu">Menu</a>
+					<a href="#events">Events</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#chefs-choice">Chefs Choice</a>
+				</div>
+			</div>
+
+			<div class="footer-bottom flex-row">
+				<span>Copyright & Copy All Rights Reserved | Made by EliteCafe</span>
+			</div>
+		</footer>
+
+		<!------- Footer End ------>
 
 		<!------- JQ Script ------>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -955,6 +1038,6 @@
 		</script>
 
 		<!------- Local JS script ------>
-		<script src="script.js" type="text/javascript"></script>
+		<script src="script.js"></script>
 	</body>
 </html>

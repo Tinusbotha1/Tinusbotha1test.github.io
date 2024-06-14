@@ -3,6 +3,9 @@ $(".home-carousel").owlCarousel({
 	loop: true,
 	margin: 0,
 	dots: true,
+	autoplay: true,
+	autoplatTimeout: 7000,
+	animateOut: "fadeOut",
 	nav: false,
 	responsive: {
 		0: {
@@ -30,8 +33,22 @@ let searchBtn = document.querySelector(".searchbtn");
 let cartBtn = document.querySelector(".cartbtn");
 let darkBtn = document.querySelector(".darkbtn");
 
+menuBtn.onclick = function () {
+	//toggles active class in Nav items on click
+	document.getElementById("nav-items").classList.toggle("active");
+
+	//changes search button on click
+	if (document.getElementById("nav-items").classList.contains("active")) {
+		menuBtn.classList.remove("bx-menu");
+		menuBtn.classList.add("bx-x");
+	} else {
+		menuBtn.classList.remove("bx-x");
+		menuBtn.classList.add("bx-menu");
+	}
+};
+
 searchBtn.onclick = function () {
-	//toggles active class in search form on click
+	//toggles active class in nav items on click
 	document.getElementById("search-form").classList.toggle("active");
 
 	//changes search button on click
@@ -105,6 +122,26 @@ MenuTabs.addEventListener("click", function (e) {
 	}
 });
 
+//add minus food
+const plus = document.querySelector(".plus"),
+	minus = document.querySelector(".minus"),
+	num = document.querySelector(".num");
+
+let a = 1;
+
+plus.addEventListener("click", () => {
+	a++;
+	a = a < 10 ? "0" + a : a;
+	num.innerText = a;
+});
+minus.addEventListener("click", () => {
+	if (a > 1) {
+		a--;
+		a = a < 10 ? "0" + a : a;
+		num.innerText = a;
+	}
+});
+
 //NB ADD CODE TO OPEN THE FULL MENU
 
 // Events carousel
@@ -117,7 +154,7 @@ $(".events-carousel").owlCarousel({
 		0: {
 			items: 1,
 		},
-		600: {
+		750: {
 			items: 2,
 		},
 		1000: {
