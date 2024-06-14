@@ -990,8 +990,36 @@ footer {
 		font-size: 15vw;
 		margin: 15px 0;
 	}
+	.grid-wrapper {
+		display: flex;
+	}
+	/* NB sticky to menu only */
+
+	.menu-tabs {
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+		position: sticky;
+		margin: 5px 0;
+		width: 100px;
+		padding: 5px;
+		background-color: var(--bg-color-3);
+	}
+	.menu-tab-item {
+		padding: 2px;
+	}
+	.menu-tab-item span {
+		font-size: 15px;
+	}
+	.menu-tab-item i {
+		font-size: 30px;
+	}
 	.menu-item {
 		width: 100%;
+	}
+	.menu-tab-item::after,
+	.menu-tab-item.active::after {
+		display: none;
 	}
 }
 @media (max-width: 850px) {
@@ -1004,33 +1032,6 @@ footer {
 	p,
 	.event-item {
 		font-size: 15px !important;
-	}
-	.menu-tab-item::after,
-	.menu-tab-item.active::after {
-		display: none;
-	}
-	/* NB sort out sizing of sideNav bar */
-	/* NB sticky to menu only */
-
-	.menu-tabs {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		margin: 5px 0;
-		width: 100px;
-		padding: 5px;
-		top: 15%;
-		left: 0;
-		background-color: var(--bg-color-3);
-	}
-	.menu-tab-item {
-		padding: 2px;
-	}
-	.menu-tab-item span {
-		font-size: 15px;
-	}
-	.menu-tab-item i {
-		font-size: 30px;
 	}
 }
 @media (max-width: 780px) {
